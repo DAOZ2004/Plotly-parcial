@@ -118,7 +118,7 @@ fig_donut.update_traces(textinfo="percent+label")
 safe_show(fig_donut, "tecnologia_donut.html")
 
 # ============================================================
-# 🌞 4) Concesionaria — Sunburst (Jerarquía Modelo → Mes)
+# 4) Concesionaria — Sunburst (Jerarquía Modelo → Mes)
 #     - Valores: Ventas (suma)
 #     - Color: Ganancia (suma)
 # ============================================================
@@ -135,7 +135,7 @@ fig_sunburst = px.sunburst(
     values="Ventas",
     color="Ganancia",
     color_continuous_scale="Tealgrn",
-    title="🌞 Concesionaria: Jerarquía Modelo → Mes por Ventas (color = Ganancia)"
+    title="Concesionaria: Jerarquía Modelo → Mes por Ventas (color = Ganancia)"
 )
 # Hover personalizado para ver totales claros
 fig_sunburst.update_traces(
