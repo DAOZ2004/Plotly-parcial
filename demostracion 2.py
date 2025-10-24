@@ -1,7 +1,4 @@
 # ==========================================
-# Plotly — 15 gráficos interactivos (3 por tipo)
-# Autor: Yopocoyo 😎
-# ==========================================
 # Categorías:
 # 1) Clásicos: Línea, Área, Histograma
 # 2) Composición: Donut, Treemap, Funnel
@@ -98,7 +95,7 @@ def grafico_histograma_edades():
     safe_show(fig, "03_histograma_edades.html")
 
 # ==========================================
-# 2) COMPOSICIÓN (3)
+# 2) COMPOSICIÓN
 # ==========================================
 
 # 2.1 Donut — Ventas tecnológicas por región
@@ -156,7 +153,7 @@ def grafico_scatter_mapbox_sucursales():
     safe_show(fig, "07_scatter_mapbox_sucursales.html")
 
 # ==========================================
-# 4) FINANCIEROS / CIENTÍFICOS (3)
+# 4) FINANCIEROS / CIENTÍFICOS (2)
 # ==========================================
 
 # 4.1 Candlestick — Precio de acción tecnológica (simulado)
