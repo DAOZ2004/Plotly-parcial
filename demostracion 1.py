@@ -1,5 +1,4 @@
 # ==========================================
-# Demostración Plotly — Yopocoyo 😎
 # 1) Bubble (concesionaria)
 # 2) Radar (estudiantes)
 # 3) Donut (ventas por región)
