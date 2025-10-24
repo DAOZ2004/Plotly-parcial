@@ -54,7 +54,7 @@ def safe_show(fig, filename="grafico.html"):
         print(f"⚠ No se pudo abrir automáticamente. Ábrelo manualmente: {out}")
 
 # ============================================================
-# 🚗 1) Concesionaria — Bubble Chart (Ventas vs Ganancia)
+# 1) Concesionaria — Bubble Chart (Ventas vs Ganancia)
 # ============================================================
 data_carros = {
     "Mes": ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio"] * 3,
@@ -79,46 +79,7 @@ fig_bubble = px.scatter(
 safe_show(fig_bubble, "concesionaria_bubble.html")
 
 # ============================================================
-# 🎓 2) Estudiantes — Radar Chart (Promedio por Materia)
-# ============================================================
-data_estudiantes = {
-    "Materia": ["Matemáticas", "Ciencias", "Historia", "Inglés", "Arte"],
-    "Promedio": [85, 78, 90, 88, 92]
-}
-df_estudiantes = pd.DataFrame(data_estudiantes)
-
-fig_radar = px.line_polar(
-    df_estudiantes,
-    r="Promedio",
-    theta="Materia",
-    line_close=True,
-    markers=True,
-    title="🎓 Estudiantes: Promedio de calificaciones por materia (Radar)"
-)
-fig_radar.update_traces(fill="toself")
-safe_show(fig_radar, "estudiantes_radar.html")
-
-# ============================================================
-# 💻 3) Tecnología — Donut Chart (Ventas por Región)
-# ============================================================
-data_tecnologia = {
-    "Región": ["Norte", "Sur", "Este", "Oeste", "Centro"],
-    "Ventas": [12000, 8500, 7600, 9400, 11000]
-}
-df_tecnologia = pd.DataFrame(data_tecnologia)
-
-fig_donut = px.pie(
-    df_tecnologia,
-    names="Región",
-    values="Ventas",
-    hole=0.4,
-    title="💻 Tecnología: Distribución de ventas por región (Donut)"
-)
-fig_donut.update_traces(textinfo="percent+label")
-safe_show(fig_donut, "tecnologia_donut.html")
-
-# ============================================================
-# 4) Concesionaria — Sunburst (Jerarquía Modelo → Mes)
+# 2) Concesionaria — Sunburst (Jerarquía Modelo → Mes)
 #     - Valores: Ventas (suma)
 #     - Color: Ganancia (suma)
 # ============================================================
